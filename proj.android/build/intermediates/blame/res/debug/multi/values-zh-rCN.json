@@ -1,6 +1,54 @@
 [
     {
-        "outputFile": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/res/merged/debug/values-zh-rCN/values-zh-rCN.xml",
+        "outputFile": "D:\\Users\\king\\e\\sharesdk\\WechatMyDemo\\proj.android\\build\\intermediates\\res\\merged\\debug\\values-zh-rCN\\values-zh-rCN.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 41,
+                    "endOffset": 92
+                },
+                "from": {
+                    "file": "D:\\Users\\king\\e\\sharesdk\\WechatMyDemo\\proj.android\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 41,
+                        "endOffset": 93
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\GITHUB\\WeChatLoginDemo\\proj.android\\build\\intermediates\\res\\merged\\debug\\values-zh-rCN\\values-zh-rCN.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 41,
+                    "endOffset": 92
+                },
+                "from": {
+                    "file": "D:\\GITHUB\\WeChatLoginDemo\\proj.android\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 41,
+                        "endOffset": 96
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\res\\merged\\debug\\values-zh-rCN\\values-zh-rCN.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +59,7 @@
                     "endOffset": 142
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/res/values-zh-rCN/strings.xml",
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\res\\values-zh-rCN\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -30,7 +78,7 @@
                     "endOffset": 258
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -42,7 +90,7 @@
                     "endOffset": 378
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -54,7 +102,7 @@
                     "endOffset": 492
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -66,7 +114,7 @@
                     "endOffset": 614
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -78,7 +126,7 @@
                     "endOffset": 740
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -90,7 +138,7 @@
                     "endOffset": 864
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -102,7 +150,7 @@
                     "endOffset": 982
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -114,7 +162,7 @@
                     "endOffset": 1110
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -126,7 +174,7 @@
                     "endOffset": 1226
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -138,7 +186,7 @@
                     "endOffset": 1345
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -150,7 +198,7 @@
                     "endOffset": 1491
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -162,7 +210,7 @@
                     "endOffset": 1640
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -174,7 +222,7 @@
                     "endOffset": 1756
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -186,7 +234,7 @@
                     "endOffset": 1885
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -198,7 +246,7 @@
                     "endOffset": 1998
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -210,7 +258,7 @@
                     "endOffset": 2134
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -222,7 +270,7 @@
                     "endOffset": 2245
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -234,7 +282,7 @@
                     "endOffset": 2367
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -246,7 +294,7 @@
                     "endOffset": 2498
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -258,7 +306,7 @@
                     "endOffset": 2649
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -270,7 +318,7 @@
                     "endOffset": 2768
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -282,7 +330,7 @@
                     "endOffset": 2871
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -294,7 +342,7 @@
                     "endOffset": 2998
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -306,7 +354,7 @@
                     "endOffset": 3115
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -318,7 +366,7 @@
                     "endOffset": 3202
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             },
             {
@@ -330,31 +378,7 @@
                     "endOffset": 3306
                 },
                 "from": {
-                    "file": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/values-zh-rCN/values-zh-rCN.xml"
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/king/e/sharesdk/WechatMyDemo/proj.android/build/intermediates/res/merged/debug/values-zh-rCN/values-zh-rCN.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 41,
-                    "endOffset": 92
-                },
-                "from": {
-                    "file": "/Users/king/e/sharesdk/WechatMyDemo/proj.android/res/values-zh-rCN/strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 56,
-                        "endColumn": 41,
-                        "endOffset": 93
-                    }
+                    "file": "D:\\Users\\king\\e\\homework\\hm-coreball\\proj.android\\build\\intermediates\\exploded-aar\\hm-coreball\\proj.android-gps\\unspecified\\res\\values-zh-rCN\\values-zh-rCN.xml"
                 }
             }
         ]

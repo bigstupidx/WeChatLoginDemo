@@ -3,7 +3,6 @@ package com.junerking.ddd.utils;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.android.volley.Response;
 import com.google.gson.Gson;
 import com.google.gson.internal.$Gson$Types;
 
@@ -18,6 +17,7 @@ import okhttp3.Callback;
 import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.Response;
 import okhttp3.RequestBody;
 
 /**
@@ -28,7 +28,7 @@ public class OkHttpUtils {
     private static final String TAG = "OkHttpUtils";
 
     private static OkHttpUtils mInstance;
-    private   mOkHttpClient;
+    private OkHttpClient mOkHttpClient;
     private Handler mDelivery;
     private Gson mGson;
 

@@ -6,9 +6,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.junerking.ddd.wxapi.WXEntryActivity;
-import com.tencent.mm.opensdk.modelmsg.SendAuth;
-import com.tencent.mm.opensdk.openapi.IWXAPI;
-import com.tencent.mm.opensdk.openapi.WXAPIFactory;
+import com.tencent.mm.sdk.modelmsg.SendAuth;
+import com.tencent.mm.sdk.openapi.IWXAPI;
+import com.tencent.mm.sdk.openapi.WXAPIFactory;
 
 public class MainActivity extends Activity {
 

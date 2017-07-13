@@ -9,26 +9,25 @@ import android.widget.Toast;
 import com.junerking.ddd.LogUtils;
 import com.junerking.ddd.WeChatInfo;
 import com.junerking.ddd.utils.OkHttpUtils;
-import com.tencent.mm.opensdk.modelbase.BaseReq;
-import com.tencent.mm.opensdk.modelbase.BaseResp;
-import com.tencent.mm.opensdk.modelmsg.SendAuth;
-import com.tencent.mm.opensdk.openapi.IWXAPI;
-import com.tencent.mm.opensdk.openapi.IWXAPIEventHandler;
-import com.tencent.mm.opensdk.openapi.WXAPIFactory;
+import com.tencent.mm.sdk.constants.ConstantsAPI;
+import com.tencent.mm.sdk.modelbase.BaseResp;
+import com.tencent.mm.sdk.openapi.IWXAPI;
+import com.tencent.mm.sdk.openapi.IWXAPIEventHandler;
+import com.tencent.mm.sdk.modelbase.BaseReq;
+import com.tencent.mm.sdk.modelbase.BaseResp;
+import com.tencent.mm.sdk.modelmsg.SendAuth;
+import com.tencent.mm.sdk.modelmsg.SendAuth.Resp;
+import com.tencent.mm.sdk.modelmsg.SendMessageToWX;
+import com.tencent.mm.sdk.openapi.IWXAPIEventHandler;
+import com.tencent.mm.sdk.openapi.WXAPIFactory;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/**
- * 微信登录页面
- *
- * @author kevin_chen 2016-12-10 下午19:03:45
- * @version v1.0
- */
 public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
     private static final String APP_SECRET = "填写自己的AppSecret";
-    private IWXAPI mWeixinAPI;
     public static final String WEIXIN_APP_ID = "填写自己的APP_id";
+    private IWXAPI mWeixinAPI;
     private static String uuid;
 
     @Override
@@ -45,46 +44,29 @@ public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
         mWeixinAPI.handleIntent(intent, this);//必须调用此句话
     }
 
-    //微信发送的请求将回调到onReq方法
+    /**
+     * 回调微信发送的请求
+     */
     @Override
-    public void onReq(BaseReq req) {
-        LogUtils.log("onReq");
+    public void onReq(BaseReq arg0) {
+        // TODO Auto-generated method stub
     }
 
-    //发送到微信请求的响应结果
-    @Override
-    public void onResp(BaseResp resp) {
-        LogUtils.log("onResp");
-        switch (resp.errCode) {
-            case BaseResp.ErrCode.ERR_OK:
-                LogUtils.log("ERR_OK");
-                //发送成功
-                SendAuth.Resp sendResp = (SendAuth.Resp) resp;
-                if (sendResp != null) {
-                    String code = sendResp.code;
-                    getAccessToken(code);
-                }
-                break;
-            case BaseResp.ErrCode.ERR_USER_CANCEL:
-                LogUtils.log("ERR_USER_CANCEL");
-                //发送取消
-                break;
-            case BaseResp.ErrCode.ERR_AUTH_DENIED:
-                LogUtils.log("ERR_AUTH_DENIED");
-                //发送被拒绝
-                break;
-            default:
-                //发送返回
-                break;
-        }
+    /**
+     * 发送到微信请求的响应结果
+     * <p/>
+     * （1）用户同意授权后得到微信返回的一个code，将code替换到请求地址GetCodeRequest里的CODE，同样替换APPID和SECRET
+     * （2）将新地址newGetCodeRequest通过HttpClient去请求，解析返回的JSON数据
+     * （3）通过解析JSON得到里面的openid （用于获取用户个人信息）还有 access_token
+     * （4）同样地，将openid和access_token替换到GetUnionIDRequest请求个人信息的地址里
+     * （5）将新地址newGetUnionIDRequest通过HttpClient去请求，解析返回的JSON数据
+     * （6）通过解析JSON得到该用户的个人信息，包括unionid
+     */
 
-    }
-
-    //请求回调结果处理
     @Override
     public void onResp(BaseResp baseResp) {
         //微信登录为getType为1，分享为0
-        if (baseResp.getType() == WX_LOGIN) {
+        if (baseResp.getType() == ConstantsAPI.COMMAND_SENDAUTH) {
             //登录回调
             SendAuth.Resp resp = (SendAuth.Resp) baseResp;
             switch (resp.errCode) {
@@ -100,7 +82,7 @@ public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
                 default:
                     break;
             }
-        } else {
+        } else if (baseResp.getType() == ConstantsAPI.COMMAND_SENDMESSAGE_TO_WX) {
             //分享成功回调
             switch (baseResp.errCode) {
                 case BaseResp.ErrCode.ERR_OK:
@@ -124,42 +106,41 @@ public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
         //获取授权
         String http = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=" + WEIXIN_APP_ID + "&secret=" + APP_SECRET
                 + "&code=" + code + "&grant_type=authorization_code";
-        OkHttpUtils.ResultCallback<String> resultCallback = OkHttpUtils.ResultCallback < String > ()
-        {
+        OkHttpUtils.ResultCallback<String> resultCallback = new OkHttpUtils.ResultCallback<String>() {
             @Override
-            public void onSuccess (String response){
-            String access = null;
-            String openId = null;
-            try {
-                JSONObject jsonObject = new JSONObject(response);
-                access = jsonObject.getString("access_token");
-                openId = jsonObject.getString("openid");
-            } catch (JSONException e) {
-                e.printStackTrace();
+            public void onSuccess(String response) {
+                String access = null;
+                String openId = null;
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+                    access = jsonObject.getString("access_token");
+                    openId = jsonObject.getString("openid");
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                //获取个人信息
+                String getUserInfo = "https://api.weixin.qq.com/sns/userinfo?access_token=" + access + "&openid=" + openId + "";
+                OkHttpUtils.ResultCallback<WeChatInfo> resultCallback2 = new OkHttpUtils.ResultCallback<WeChatInfo>() {
+                    @Override
+                    public void onSuccess(WeChatInfo response) {
+                        Log.i("TAG", response.toString());
+                        Toast.makeText(WXEntryActivity.this, response.toString(), Toast.LENGTH_LONG).show();
+                        finish();
+                    }
+
+                    @Override
+                    public void onFailure(Exception e) {
+                        Toast.makeText(WXEntryActivity.this, "登录失败1", Toast.LENGTH_SHORT).show();
+                    }
+                };
+                OkHttpUtils.get(getUserInfo, resultCallback2);
             }
-            //获取个人信息
-            String getUserInfo = "https://api.weixin.qq.com/sns/userinfo?access_token=" + access + "&openid=" + openId + "";
-            OkHttpUtils.ResultCallback<WeChatInfo> resultCallback = new OkHttpUtils.ResultCallback<WeChatInfo>() {
-                @Override
-                public void onSuccess(WeChatInfo response) {
-                    Log.i("TAG", response.toString());
-                    Toast.makeText(WXEntryActivity.this, response.toString(), Toast.LENGTH_LONG).show();
-                    finish();
-                }
-
-                @Override
-                public void onFailure(Exception e) {
-                    Toast.makeText(WXEntryActivity.this, "登录失败1", Toast.LENGTH_SHORT).show();
-                }
-            };
-            OkHttpUtils.get(getUserInfo, resultCallback);
-        }
 
             @Override
-            public void onFailure (Exception e){
-            Toast.makeText(WXEntryActivity.this, "登录失败2", Toast.LENGTH_SHORT).show();
-        }
-        } ;
+            public void onFailure(Exception e) {
+                Toast.makeText(WXEntryActivity.this, "登录失败2", Toast.LENGTH_SHORT).show();
+            }
+        };
         OkHttpUtils.get(http, resultCallback);
     }
 

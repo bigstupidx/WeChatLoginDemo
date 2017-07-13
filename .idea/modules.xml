@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WechatMyDemo.iml" filepath="$PROJECT_DIR$/WechatMyDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WeChatLoginDemo.iml" filepath="$PROJECT_DIR$/WeChatLoginDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/proj.android/proj.android.iml" filepath="$PROJECT_DIR$/proj.android/proj.android.iml" />
     </modules>
   </component>
