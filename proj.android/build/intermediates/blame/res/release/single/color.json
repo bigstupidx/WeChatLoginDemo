@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/res/merged/release/color/common_signin_btn_text_dark.xml",
+        "source": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/color/common_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/res/merged/release/color/common_signin_btn_text_light.xml",
+        "source": "/Users/king/e/homework/hm-coreball/proj.android/build/intermediates/exploded-aar/hm-coreball/proj.android-gps/unspecified/res/color/common_signin_btn_text_light.xml"
+    }
+]

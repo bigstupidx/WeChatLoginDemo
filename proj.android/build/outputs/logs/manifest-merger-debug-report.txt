@@ -1,0 +1,103 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:2:1-51:12
+	package
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:3:5-32
+	android:versionName
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:6:5-30
+		INJECTED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml
+		INJECTED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml
+	android:versionCode
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:5:5-28
+		INJECTED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml
+		INJECTED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:4:5-45
+supports-screens
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:8:5-14:40
+	android:largeScreens
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:10:9-36
+	android:smallScreens
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:13:9-36
+	android:normalScreens
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:11:9-37
+	android:xlargeScreens
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:14:9-37
+	android:resizeable
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:12:9-34
+	android:anyDensity
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:9:9-34
+uses-sdk
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:16:5-18:41
+	android:targetSdkVersion
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:18:9-38
+	android:minSdkVersion
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:17:9-34
+uses-permission#android.permission.INTERNET
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:20:5-67
+	android:name
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:20:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:21:5-81
+	android:name
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:21:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:22:22-76
+uses-permission#com.android.vending.BILLING
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:23:22-64
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:24:5-75
+	android:name
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:24:22-72
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:25:5-76
+	android:name
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:25:22-73
+application
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:27:5-49:19
+	android:label
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:29:9-41
+	android:icon
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:28:9-42
+activity#com.junerking.ddd.MainActivity
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:30:9-42:20
+	android:screenOrientation
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:35:13-49
+	android:label
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:33:13-45
+	android:launchMode
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:34:13-44
+	android:configChanges
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:32:13-170
+	android:theme
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:36:13-71
+	android:name
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:31:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:37:13-41:29
+action#android.intent.action.MAIN
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:38:17-69
+	android:name
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:38:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:40:17-77
+	android:name
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:40:27-74
+activity#com.junerking.ddd.wxapi.WXEntryActivity
+ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:43:9-48:64
+	android:label
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:46:13-45
+	android:launchMode
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:47:13-43
+	android:exported
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:45:13-36
+	android:theme
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:48:13-61
+	android:name
+		ADDED from /Users/king/e/sharesdk/WechatMyDemo/proj.android/AndroidManifest.xml:44:13-50
